@@ -1,4 +1,4 @@
-package xyz.dev.roomtracking.quater2;
+package xyz.dev.roomtracking.quarter2;
 
 import org.junit.Test;
 
