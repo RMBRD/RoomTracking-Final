@@ -6,16 +6,29 @@ import java.util.Scanner;
 
 public class autoInput {
     @Test
-    public void autoinput() {
-        StringBuilder automatedInput = new StringBuilder(); // This creates a StringBuilder named "automatedInput"
-        System.out.println("=== CREATING AUTO INPUT ===");
-        automatedInput.append("Hello\n"); // 1st Keyboard input (PLACEHOLDER)
-        automatedInput.append(", world\n"); // 2nd Keyboard input (PLACEHOLDER)
-        System.out.println("=== AUTO INPUT CREATED===");
-        ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes()); // This converts the String into automatedInput
-        Scanner autoin = new Scanner(inputStream); // This creates a Scanner that contains inputStream. Its name is "autoin"
-        // Use "public void start(Scanner autoin) {" to call the String.
-        // the java class must be called  with "new 'java class name'().start(autoin);"
-        MainMenu.start(autoin);
+    public void autoInput() {
+        StringBuilder automatedInput = new StringBuilder();
+        int interactionCount = 1;
+        while (interactionCount <= 3) {
+            System.out.println("Generating inputs for interaction #" + interactionCount);
+            // ADD REQUIRED INPUTS!! Back Input is for going back to Main Menu.
+            if (interactionCount == 1) { //Login Inputs
+                automatedInput.append("0\n"); // Back Input
+            } else if (interactionCount == 2) { // Records Inputs
+                automatedInput.append("0\n"); // Back Input
+            } else if (interactionCount == 3){ // Alerts Inputs
+                automatedInput.append("0\n"); // Back Input
+            }else { // Program Close
+                automatedInput.append("0\n");
+            }
+            interactionCount++;
+        }
+        ByteArrayInputStream simInput = new ByteArrayInputStream(automatedInput.toString().getBytes());
+
+        Scanner autoin = new Scanner(simInput);
+
+        MainMenu mainSystem = new MainMenu();
+
+        mainSystem.start(autoin);
     }
 }
