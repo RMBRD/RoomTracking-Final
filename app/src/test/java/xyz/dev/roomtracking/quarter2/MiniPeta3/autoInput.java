@@ -1,4 +1,4 @@
-package xyz.dev.roomtracking.quarter2.PracExam;
+package xyz.dev.roomtracking.quarter2.MiniPeta3;
 
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
