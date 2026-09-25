@@ -12,7 +12,7 @@ public class MainMenu {
         System.out.println("=====================");
 
         int choice = autoin.nextInt();
-        System.out.println(choice);
+        System.out.println("Choice:" + choice);
 
         if (choice == 1) {
             Login.run(autoin);

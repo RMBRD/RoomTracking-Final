@@ -10,7 +10,7 @@ public class autoInput {
         StringBuilder automatedInput = new StringBuilder();
         int interactionCount = 1;
         while (interactionCount <= 3) {
-            System.out.println("Generating inputs for interaction #" + interactionCount);
+            System.out.println("Generating inputs for interaction #" + interactionCount + "...");
             // ADD REQUIRED INPUTS!! Back Input is for going back to Main Menu.
             if (interactionCount == 1) { //Login Inputs
                 automatedInput.append("0\n"); // Back Input
@@ -23,6 +23,7 @@ public class autoInput {
             }
             interactionCount++;
         }
+        System.out.println("Input generation complete!");
         ByteArrayInputStream simInput = new ByteArrayInputStream(automatedInput.toString().getBytes());
 
         Scanner autoin = new Scanner(simInput);
