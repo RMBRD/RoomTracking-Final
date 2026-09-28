@@ -9,7 +9,7 @@ public class Records {
 
         System.out.print("Enter Student ID: ");
         String studentID = autoin.nextLine();
-        //DWADASDAD
+        //DWADASDADdwd
         System.out.print("Enter Student Name: ");
         String studentName = autoin.nextLine();
 
