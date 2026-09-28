@@ -28,7 +28,7 @@ public class Records {
         System.out.println("Grade Level: " + gradeLevel);
         System.out.println("Active Record: " + isActive);
 
-        MainMenu.run(autoin);
+        MainMenu.start(autoin);
 
     }
 }
