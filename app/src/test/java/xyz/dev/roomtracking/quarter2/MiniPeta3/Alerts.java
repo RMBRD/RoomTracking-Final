@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Alerts {
     public static void run(Scanner autoin){
+        String studentID;
 
- }
+    }
 }
