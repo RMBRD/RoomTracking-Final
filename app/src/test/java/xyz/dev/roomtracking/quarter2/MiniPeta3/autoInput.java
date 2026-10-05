@@ -13,18 +13,20 @@ public class autoInput {
             System.out.println("Generating inputs for interaction #" + interactionCount + "...");
             // ADD REQUIRED INPUTS!! Back Input is for going back to Main Menu.
             if (interactionCount == 1) { //Login Inputs
+                automatedInput.append("1\n");
                 automatedInput.append("admin\n");
                 automatedInput.append("1234\n");
                 automatedInput.append("student\n");
                 automatedInput.append("1234\n");
                 automatedInput.append("0\n"); // Back Input
             } else if (interactionCount == 2) { // Records Inputs
+                automatedInput.append("2\n"); 
                 automatedInput.append("Juan Dela Cruz\n");
                 automatedInput.append("25-000670\n");
                 automatedInput.append("12\n");
                 automatedInput.append("Yes\n");
-                automatedInput.append("0\n"); // Back Input
             } else if (interactionCount == 3){ // Alerts Inputs
+                automatedInput.append("3\n");
                 automatedInput.append("0\n"); // Back Input
             }else { // Program Close
                 automatedInput.append("0\n");
