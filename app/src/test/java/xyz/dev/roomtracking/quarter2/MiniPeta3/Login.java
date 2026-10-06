@@ -25,8 +25,12 @@ public class Login {
 
             System.out.println("Login Failed!");
             System.out.println("Invalid Username or Password");
-
-            MainMenu.start(autoin);
+            System.out.println("Returning to Main Menu...");
+            int choice = autoin.nextInt();
+            System.out.println("Choice:" + choice);
+            if (choice == 0) {
+                MainMenu.start(autoin);
+            }
         }
     }
 }
