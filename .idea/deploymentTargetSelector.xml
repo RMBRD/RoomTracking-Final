@@ -6,7 +6,7 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
-      <SelectionState runConfigName="StudentRecords">
+      <SelectionState runConfigName="Login">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
