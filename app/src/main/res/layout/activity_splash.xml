@@ -45,13 +45,15 @@
 
     <Button
         android:id="@+id/btn_login"
-        style="@style/Widget.AppCompat.Button"
-        android:layout_width="0dp"
+        android:layout_width="400dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
         android:backgroundTint="#315F91"
-        android:text="Sign in"
+        android:text="Sign In"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txt_greet" />
+        app:layout_constraintTop_toBottomOf="@+id/txt_greet"
+        app:layout_constraintVertical_bias="0.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
