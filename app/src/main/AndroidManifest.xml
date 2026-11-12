@@ -44,7 +44,7 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".MainActivity"
+            android:name=".studentrecords"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
