@@ -5,10 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Alerts">
+    tools:context=".Alerts"
+    tools:ignore="ExtraText">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_alert_back"
         android:layout_width="309dp"
         android:layout_height="48dp"
         android:text="Return to Menu"
@@ -18,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.942" />
-
     <TextView
         android:id="@+id/alerts_mainheader"
         android:layout_width="341dp"

@@ -1,6 +1,9 @@
 package xyz.dev.roomtracking;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,5 +23,15 @@ public class Alerts extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        Button button = findViewById(R.id.btn_alert_back);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent;
+                intent = new Intent(Alerts.this, MainMenu.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
