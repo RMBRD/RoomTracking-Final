@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">RoomTracking</string>
+    <string name="date_input_text">Date\'</string>
+    <string name="Back_to_Menu">alerts_back_button\n</string>
+    <string name="back_to_menu">Back_to_Menu</string>
+    <string name="student_alerts">Student Alerts</string>
+    <string name="name">Name</string>
+    <string name="time_input_text">Time</string>
 </resources>

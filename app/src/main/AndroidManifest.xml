@@ -13,7 +13,7 @@
         android:theme="@style/Theme.RoomTracking">
         <activity
             android:name=".Alerts"
-            android:exported="false"
+            android:exported="true"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".Splash"
@@ -30,20 +30,6 @@
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".StudentRecords"
-            android:exported="true"
-            android:windowSoftInputMode="adjustResize">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".studentrecords"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
             android:name=".studentrecords"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
@@ -57,6 +43,10 @@
             android:name=".Login"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
+        // Source - https://stackoverflow.com/a/51923033
+        // Posted by SagarScript
+        // Retrieved 2026-11-24, License - CC BY-SA 4.0
+
     </application>
 
 </manifest>

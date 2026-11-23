@@ -13,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class Alerts extends AppCompatActivity {
 
+    private Button backButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,11 +26,11 @@ public class Alerts extends AppCompatActivity {
             return insets;
         });
 
-        Button button = findViewById(R.id.btn_alert_back);
-        button.setOnClickListener(new View.OnClickListener() {
+        backButton = findViewById(R.id.alert_backbtn);
+        backButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                Intent intent;
-                intent = new Intent(Alerts.this, MainMenu.class);
+                Intent intent = new Intent(Alerts.this, MainMenu.class);
+
                 startActivity(intent);
             }
         });
